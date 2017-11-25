@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.2 (Python 3.6.0 on win32)" generated="20171125 14:31:52.164">
+<suite id="s1" name="Register.Spec" source="D:\58160638\06-register-robot\test\register.spec.robot">
+<test id="s1-t1" name="Check all required fileds in registration form">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://angsila.cs.buu.ac.th/~wittawas/601/887240/labs/testdemo/index.php/register</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20171125 14:31:52.270" level="INFO">Opening browser 'chrome' to base url 'http://angsila.cs.buu.ac.th/~wittawas/601/887240/labs/testdemo/index.php/register'.</msg>
+<status status="PASS" starttime="20171125 14:31:52.270" endtime="20171125 14:31:55.835"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=btn_submit</arg>
+</arguments>
+<msg timestamp="20171125 14:31:55.836" level="INFO">Clicking element 'id=btn_submit'.</msg>
+<status status="PASS" starttime="20171125 14:31:55.835" endtime="20171125 14:31:55.948"></status>
+</kw>
+<kw name="Wait Untill Page Contains">
+<arguments>
+<arg>The Email field is required.</arg>
+</arguments>
+<msg timestamp="20171125 14:31:55.951" level="FAIL">No keyword with name 'Wait Untill Page Contains' found. Did you mean:
+    SeleniumLibrary.Wait Until Page Contains</msg>
+<status status="FAIL" starttime="20171125 14:31:55.951" endtime="20171125 14:31:55.951"></status>
+</kw>
+<status status="FAIL" starttime="20171125 14:31:52.270" endtime="20171125 14:31:55.952" critical="yes">No keyword with name 'Wait Untill Page Contains' found. Did you mean:
+    SeleniumLibrary.Wait Until Page Contains</status>
+</test>
+<test id="s1-t2" name="Register successfully when input valid data">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://angsila.cs.buu.ac.th/~wittawas/601/887240/labs/testdemo/index.php/register</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20171125 14:31:55.953" level="INFO">Opening browser 'chrome' to base url 'http://angsila.cs.buu.ac.th/~wittawas/601/887240/labs/testdemo/index.php/register'.</msg>
+<status status="PASS" starttime="20171125 14:31:55.953" endtime="20171125 14:31:59.502"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>waroon1@gmail.com</arg>
+</arguments>
+<msg timestamp="20171125 14:31:59.502" level="INFO">Typing text 'waroon1@gmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20171125 14:31:59.502" endtime="20171125 14:31:59.639"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>babybew</arg>
+</arguments>
+<msg timestamp="20171125 14:31:59.640" level="INFO">Typing password into text field 'id=password'.</msg>
+<status status="PASS" starttime="20171125 14:31:59.639" endtime="20171125 14:31:59.718"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=repassword</arg>
+<arg>babybew</arg>
+</arguments>
+<msg timestamp="20171125 14:31:59.719" level="INFO">Typing password into text field 'id=repassword'.</msg>
+<status status="PASS" starttime="20171125 14:31:59.719" endtime="20171125 14:31:59.792"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=name</arg>
+<arg>waroon</arg>
+</arguments>
+<msg timestamp="20171125 14:31:59.792" level="INFO">Typing text 'waroon' into text field 'id=name'.</msg>
+<status status="PASS" starttime="20171125 14:31:59.792" endtime="20171125 14:31:59.868"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=btn_submit</arg>
+</arguments>
+<msg timestamp="20171125 14:31:59.869" level="INFO">Clicking element 'id=btn_submit'.</msg>
+<status status="PASS" starttime="20171125 14:31:59.868" endtime="20171125 14:32:00.038"></status>
+</kw>
+<kw name="Wait Untill Page Contains">
+<arguments>
+<arg>waroon1@gmail.com</arg>
+</arguments>
+<msg timestamp="20171125 14:32:00.042" level="FAIL">No keyword with name 'Wait Untill Page Contains' found. Did you mean:
+    SeleniumLibrary.Wait Until Page Contains</msg>
+<status status="FAIL" starttime="20171125 14:32:00.041" endtime="20171125 14:32:00.042"></status>
+</kw>
+<status status="FAIL" starttime="20171125 14:31:55.952" endtime="20171125 14:32:00.042" critical="yes">No keyword with name 'Wait Untill Page Contains' found. Did you mean:
+    SeleniumLibrary.Wait Until Page Contains</status>
+</test>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="teardown">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20171125 14:32:00.043" endtime="20171125 14:32:06.109"></status>
+</kw>
+<status status="FAIL" starttime="20171125 14:31:52.164" endtime="20171125 14:32:06.109"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2">Critical Tests</stat>
+<stat pass="0" fail="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" id="s1" name="Register.Spec">Register.Spec</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
